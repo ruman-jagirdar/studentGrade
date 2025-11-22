@@ -4,12 +4,17 @@ import sys
 if len(sys.argv) != 6:
     print("Usage: python program.py mark1 mark2 mark3 mark4 mark5")
     sys.exit(1)
+script_name=sys.argv[0]
+mark1=sys.argv[1]
+mark2=sys.argv[2]
+mark3=sys.argv[2]
+mark4=sys.argv[2]
+mark5=sys.argv[2]
 
-# Accept marks from command-line arguments
-marks = [float(arg) for arg in sys.argv[1:6]]
+
 
 # Calculate average
-average = sum(marks) / len(marks)
+average = mark1+mark2+mark3+mark4+mark5/5
 
 # Determine grade
 if average >= 90:
@@ -27,3 +32,5 @@ else:
 print("\n--- Result ---")
 print(f"Average Marks: {average:.2f}")
 print(f"Grade: {grade}")
+
+
