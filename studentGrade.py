@@ -1,6 +1,6 @@
 import sys
 
-# Check if 5 marks are provided
+
 if len(sys.argv) != 6:
     print("Usage: python program.py mark1 mark2 mark3 mark4 mark5")
     sys.exit(1)
@@ -11,12 +11,9 @@ mark3=sys.argv[2]
 mark4=sys.argv[2]
 mark5=sys.argv[2]
 
-
-
-# Calculate average
 average = mark1+mark2+mark3+mark4+mark5/5
 
-# Determine grade
+
 if average >= 90:
     grade = "A"
 elif average >= 75:
@@ -28,7 +25,7 @@ elif average >= 40:
 else:
     grade = "Fail"
 
-# Print results
+
 print("\n--- Result ---")
 print(f"Average Marks: {average:.2f}")
 print(f"Grade: {grade}")
