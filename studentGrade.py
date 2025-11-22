@@ -5,13 +5,13 @@ if len(sys.argv) != 6:
     print("Usage: python program.py mark1 mark2 mark3 mark4 mark5")
     sys.exit(1)
 script_name=sys.argv[0]
-mark1=sys.argv[1]
-mark2=sys.argv[2]
-mark3=sys.argv[2]
-mark4=sys.argv[2]
-mark5=sys.argv[2]
+mark1=float(sys.argv[1])
+mark2=float(sys.argv[2])
+mark3=float(sys.argv[2])
+mark4=float(sys.argv[2])
+mark5=float(sys.argv[2])
 
-average = mark1+mark2+mark3+mark4+mark5/5
+average = (mark1+mark2+mark3+mark4+mark5)/5
 
 
 if average >= 90:
